@@ -1,0 +1,286 @@
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  color: #5145cd;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 75px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(120deg, #4338ca, #8172f3);
+}
+
+.hero h1 {
+  margin: 10px 0;
+  font-size: clamp(32px, 5vw, 50px);
+}
+
+.hero p {
+  line-height: 1.8;
+}
+
+.eyebrow {
+  color: #7668df;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero .eyebrow {
+  color: #e3dfff;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-btn {
+  color: white;
+  background: #5145cd;
+}
+
+.hero .primary-btn {
+  color: #4338ca;
+  background: white;
+}
+
+.secondary-btn {
+  display: block;
+  color: #5145cd;
+  background: #efedff;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 45px 0;
+  flex: 1;
+}
+
+.container h2 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #778097;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.card {
+  padding: 25px;
+  border: 1px solid #e7e9f1;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 5px 20px #20284a08;
+}
+
+.card h3 {
+  margin-top: 20px;
+}
+
+.card p {
+  color: #778097;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.company {
+  color: #5145cd !important;
+  font-weight: 700;
+}
+
+.tag {
+  display: inline-block;
+  padding: 7px 11px;
+  border-radius: 20px;
+  color: #5145cd;
+  background: #efedff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0;
+  padding-top: 15px;
+  border-top: 1px solid #e7e9f1;
+  font-size: 13px;
+}
+
+.card-info strong {
+  color: #15845d;
+}
+
+.details-card {
+  max-width: 750px;
+  margin: 25px auto 0;
+}
+
+.details-card h1 {
+  font-size: 32px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 30px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 32px;
+  border: 1px solid #e7e9f1;
+  border-radius: 14px;
+  background: white;
+}
+
+.form-card h1 {
+  margin-bottom: 8px;
+  font-size: 29px;
+}
+
+.form-card label {
+  display: block;
+  margin: 18px 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px;
+  border: 1px solid #d9deea;
+  border-radius: 8px;
+  background: white;
+  font: inherit;
+  font-size: 14px;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: #5145cd;
+  outline: 2px solid #efedff;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success-message,
+.error-message,
+.notice {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.success-message {
+  color: #08734c;
+  background: #e6f8ef;
+}
+
+.error-message {
+  color: #b42332;
+  background: #fff0f0;
+}
+
+.notice {
+  color: #5b4a00;
+  background: #fff6d9;
+}
+
+.footer {
+  padding: 23px;
+  color: #778097;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0 5%;
+  }
+
+  .header nav {
+    gap: 14px;
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 55px 15px;
+  }
+
+  .form-card {
+    padding: 23px;
+  }
+
+  .card-info {
+    flex-wrap: wrap;
+  }
+}
