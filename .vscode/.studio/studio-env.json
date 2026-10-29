@@ -1,0 +1,9 @@
+{
+    "STUDIO_HOST_ID": "04ff72ac7a0b-0af42d38",
+    "STUDIO_HOST": "ws6.app",
+    "MONGODB_HOST": "db01.dbhost.dev",
+    "MONGODB_PORT": "5050",
+    "MONGODB_USERNAME": "user_457m8gnpm",
+    "MONGODB_PASSWORD": "p457m8gnpm",
+    "MONGODB_DB": "db_457m8gnpm"
+}
